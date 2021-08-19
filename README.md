@@ -1,4 +1,4 @@
-# PIC MCU-PWM
+# PIC microcontroller demo of PWM
 
 This is an early prototype of a PIC microcontroller programmed in assembly language to demonstarte movement using pulse-width modulation.
 
