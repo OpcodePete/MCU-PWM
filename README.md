@@ -13,15 +13,15 @@ PIC16F84 is an 8-bit microcontroller from Microchip (http://www.microchip.com/).
 SN754410 is a quadruple half H-Bridge from Texas Instruments (http://www.ti.com/). This interfaces the microcontroller to the DC motors as TTL voltages are not sufficient to drive motors.
 
 **Power Sources**  
-Primary Power Unit: Sealed Lead Acid (SLA) battery.
+Sealed Lead Acid (SLA) battery.
 
 **Framework**  
 Chassis has been built with parts from Tamiya (http://www.tamiya.com/).
 
 <br />
 <br />
+<br />
 
-**Software**  
 An interrupt design program developed in assembly language. Pulse width modulation (PWM) is used for speed control and can also maintaining torque.
 
 ```bash
