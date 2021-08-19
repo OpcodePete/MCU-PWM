@@ -21,6 +21,7 @@ Chassis has been built with parts from Tamiya (http://www.tamiya.com/).
 <br />
 <br />
 <br />
+<br /><img align="right" src="doc/subpagelist.png">
 
 An interrupt design program developed in assembly language. Pulse width modulation (PWM) is used for speed control and can also maintaining torque.
 
