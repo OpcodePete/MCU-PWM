@@ -40,7 +40,7 @@ RESET_VECTOR    ORG        0x000                ; Processor reset vector
                 GOTO    MAIN                    ; Go to beginning of program
 
 
-INT_VECTOR        ORG        0x004              ; Interrupt vector location           
+INT_VECTOR      ORG        0x004                ; Interrupt vector location           
                 MOVWF    W_TEMP                 ; Copy W register to W_TEMP storage location
                 SWAPF    STATUS, W              ; Swap STATUS to be saved into W register
                 MOVWF    S_TEMP                 ; Copy STATUS register to S_TEMP storage location
@@ -73,9 +73,8 @@ PWM_DONE_1        MOVWF    TMR0                 ; Set timer for next (high or lo
                 SWAPF    W_TEMP, F              ; Swap W_TEMP storage location to be saved into W_TEMP storage location
                 SWAPF    W_TEMP, W              ; Swap W_TEMP storage location to be saved into W register
                 RETFIE
-           
-           
-           
+
+
 MAIN            ; Initialise Ports
                 BCF        STATUS, RP0          ; Select Bank 0
                 CLRF    PORTA                   ; Initialise PORT A by clearing output data latches
@@ -110,19 +109,19 @@ MAIN            ; Initialise Ports
                 MOVWF    SPEED                  ; Set speed
 HERE            GOTO    HERE                    ; Wait here (interrupt driven program)
                 END
-           
+
 
                 ; Set movement with direction 1A,2A or 3A,4A
-                BTFSC    PORTA, 04h            ; Check input on RA<4>
+                BTFSC    PORTA, 04h             ; Check input on RA<4>
                 GOTO    MOVEBKWD
-                BTFSS    PORTA, 04h            ; Check input on RA<4>
+                BTFSS    PORTA, 04h             ; Check input on RA<4>
                 GOTO    MOVEFWD
                 GOTO    START
 
 MOVEBKWD        MOVLW    B'00000101'            ; Set values (logic 0s & 1s) to send to PORT A
-                MOVWF    PORTA                ; Send values to port
+                MOVWF    PORTA                  ; Send values to port
                 GOTO    START
 
 MOVEFWD         MOVLW    B'00001010'            ; Set value of 'forward'
-                MOVWF    PORTA                ; Send value to Port A
+                MOVWF    PORTA                  ; Send value to Port A
 ```
