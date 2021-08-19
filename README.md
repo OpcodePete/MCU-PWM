@@ -4,6 +4,10 @@ This is an early prototype (in 2009) using a PIC microcontroller and assembly la
 
 <br />
 
+![pwn tank](/images/pwm-tank.jpg)
+
+<br />
+
 **Central Processing Unit**  
 PIC16F84 is an 8-bit microcontroller from Microchip (http://www.microchip.com/).
 
