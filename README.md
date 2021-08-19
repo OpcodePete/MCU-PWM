@@ -1,12 +1,10 @@
 # PIC microcontroller demo of PWM
 
-This is an early prototype (in 2009) using a PIC microcontroller and assembly language to demonstarte movement using pulse-width modulation.
+This is an early prototype (in 2009) using a PIC microcontroller and assembly language to demonstarte movement using pulse-width modulation (PWM).
 
 <br />
 
-![pwn tank](/images/pwm-tank.jpg)
-
-<br />
+<img align="right" width="600" src="/images/pwm-tank.jpg">
 
 **Central Processing Unit**  
 PIC16F84 is an 8-bit microcontroller from Microchip (http://www.microchip.com/).
@@ -20,8 +18,12 @@ Primary Power Unit: Sealed Lead Acid (SLA) battery.
 **Framework**  
 Chassis has been built with parts from Tamiya (http://www.tamiya.com/).
 
+<br />
+<br />
+<br />
+
 **Software**  
-An interrupt design program developed in assembly language. Pulse width modulation (PWM) is used for speed control and also maintaining torque
+An interrupt design program developed in assembly language. Pulse width modulation (PWM) is used for speed control and can also maintaining torque.
 
 ```bash
 
